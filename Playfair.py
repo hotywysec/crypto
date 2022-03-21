@@ -115,7 +115,7 @@ def decryption(cipher_text):
                             decryption_list[i] == decryption_list[i+2] and decryption_list[i+1] == "Z":
                 delete_list.append(i+1)
                 #decryption_list.pop(i+1)
-    delete_list.reverse()     #反序，从后往前删除，每次删完下标就不会再变化，我真是太聪明了！
+    delete_list.reverse()     #反序，从后往前删除，每次删完下标就不会再变化.
     for i in delete_list:
         print(i)
         decryption_list.pop(i)
